@@ -5,5 +5,5 @@ export interface PostMetadata {
   category: string,
   author: string,
   author_image: string,
-  id: string,
+  postId: string,
 }
