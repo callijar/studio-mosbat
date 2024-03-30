@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 	title: 'تست',
 };
 
-export default function BlogPage() {
+export default function TestPage() {
   return (
     <main className="mx-auto flex min-h-screen flex-col items-center justify-evenly p-10">
       
