@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 export default function MainFooter() {
@@ -10,7 +9,7 @@ export default function MainFooter() {
         height={40}
         alt="logo"
       />
-      <p className="my-3 text-sm text-gray-500">with 💜 by  
+      <p className="my-3 text-sm text-gray-500">💜 by  
       <a href="https://callijar.github.io/" target="_blank" > Callijar</a>
       </p>
     </footer>

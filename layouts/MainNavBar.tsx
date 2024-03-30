@@ -17,7 +17,9 @@ export default function MainNavBar() {
           />
         </Link>
         <div className='flex-end text-xl font-semibold'>
-          <Link href="/blog" className="mx-5 cursor-pointer hover:text-indigo-500"> بلاگ </Link>
+          <Link href="/blog" className="mx-5 cursor-pointer hover:text-indigo-500"> مقالات </Link>
+          <Link href="/test" className="mx-5 cursor-pointer hover:text-indigo-500"> تست </Link>
+          <Link href="/gallery" className="mx-5 cursor-pointer hover:text-indigo-500"> گالری </Link>
           <Link href="/about" className="mx-5 cursor-pointer hover:text-indigo-500"> درباره ما </Link>
         </div>
       </nav>
