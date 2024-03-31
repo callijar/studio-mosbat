@@ -3,6 +3,7 @@ import { Noto_Naskh_Arabic } from "next/font/google";
 import "./globals.css";
 import MainNavBar from "@/layouts/MainNavBar";
 import MainFooter from "@/layouts/MainFooter";
+import { Analytics } from '@vercel/analytics/react';
 
 const noto = Noto_Naskh_Arabic({ subsets: ["arabic", "latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <MainNavBar />
         {children}
         <MainFooter />
+        <Analytics />
         </body>
     </html>
   );

@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
+    "embla-carousel": "^8.0.0",
+    "embla-carousel-autoplay": "^8.0.0",
+    "embla-carousel-react": "^8.0.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
     "markdown-to-jsx": "^7.4.5",
