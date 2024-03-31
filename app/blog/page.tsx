@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Metadata } from 'next';
 
 import getPostMetadata from "@/helpers/getPostMetadata";
@@ -14,7 +13,7 @@ export default function BlogPage() {
 
   const postMetadata = getPostMetadata();
   const postPreviews = postMetadata.map((post) => (
-    <PostPreview key={post.postId} {...post} />
+    <PostPreview key={post.postId} {...post} />   // the spread operator (...) gives ALL of the post parameters as PostPreview props
   ));
 
   return (

@@ -9,8 +9,6 @@ author_image: '/apple-touch-icon.png'
 ---
 
 
-# Ore duraque navis
-
 ## Vinclis inque
 
 Lorem markdownum fugiant **ramum in refert**, id orbe amor in curvamine

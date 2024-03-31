@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function MainNavBar() {
   return (
-    <header className="shadow-lg bg-gradient-to-b from-white via-white">
-      <nav className='container w-full mx-auto flex p-5 flex-col md:flex-row items-center justify-between'>
+    <header className="w-screen shadow-lg bg-gradient-to-b from-white via-white">
+      <nav className='container max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between p-3'>
         <Link
           href="/"
           className="flex-start mb-4 md:mb-0"
         >
           <Image
-            src="/images/logo with text.svg"
+            src="/images/logo-with-text.svg"
             width={120}
             height={40}
             alt="Studio Mosbat logo"

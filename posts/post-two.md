@@ -10,7 +10,6 @@ author_image: '/apple-touch-icon.png'
 
 
 
-# Pavere me in texerat nostrae sum bos
 
 ## Discrimine quarum
 

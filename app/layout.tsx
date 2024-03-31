@@ -7,7 +7,12 @@ import MainFooter from "@/layouts/MainFooter";
 const noto = Noto_Naskh_Arabic({ subsets: ["arabic", "latin"] });
 
 export const metadata: Metadata = {
-  title: 'استودیو مثبت',
+
+  title: {
+    template: '%s | استودیو مثبت',
+    default: 'استودیو مثبت',
+  },
+
   keywords: ['موفقیت', 'سلامت روان', 'پیشرفت شغلی', 'پیشرفت تحصیلی'],
   description: 'سلامت روان و موفقیت شغلی تحصیلی',
   icons: {
