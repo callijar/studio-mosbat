@@ -6,9 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 219, 219, 219;
   --background-end-rgb: 255, 255, 255;
-  --text-high-contrast-rgb-value: 49, 49, 49;;
-  --detail-medium-contrast: rgb(234, 234, 234);
-  --text-body: rgb(54, 49, 61);;
+  --text-high-contrast-rgb-value: 49, 49, 49;
+  --detail-medium-contrast: #9ca3af;
+  --text-body: #1f2937;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -47,7 +47,7 @@ export default function PostPage(props: any) {
           زمان مطالعه 5 دقیقه
         </div>
       </div>
-      <h1 className="mb-5 text-4xl font-bold bg-gradient-to-r from-emerald-500 to-indigo-500 inline-block text-transparent bg-clip-text">
+      <h1 className="mb-5 py-10 text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-500 to-indigo-500 inline-block text-transparent bg-clip-text">
         {post.data.title}
       </h1>
 

@@ -4,9 +4,11 @@ import "survey-core/defaultV2.min.css";
 import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import { stressTestData } from "@/helpers/stressTestData";
+import { surveyTheme } from "@/helpers/surveyTheme";
 
 export default function StressSurvey() {
   const survey = new Model(stressTestData); // create survey based on JSON file
+  survey.applyTheme(surveyTheme);
 
   /*
   // view completed survey object in console for testing
