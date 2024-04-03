@@ -13,18 +13,18 @@ export default function PostPreview(props: PostMetadata) {
       <Image
       className="mb-5 rounded-lg"
         src={props.cover_image}
-        width={600}
-        height={400}
+        width={1200}
+        height={480}
         alt="cover image"
       />
 
-      <div className="my-3">{props.category}</div>
+      <div className="my-3 text-emerald-600 font-semibold">{props.category}</div>
 
       <h2 className="inline-block mb-3 text-2xl font-semibold bg-gradient-to-l from-indigo-200 to-indigo-100 bg-[length:0px_10px] bg-right-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_15px]">
         {props.title}
       </h2>
 
-      <p className="m-0 max-w-[30ch] text-gray-600">{props.excerpt}</p>
+      <p className="m-0 text-gray-600">{props.excerpt}</p>
     </Link>
   );
 }

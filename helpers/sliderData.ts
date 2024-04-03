@@ -1,7 +1,7 @@
 export const sliderData = [
   {
     id: 1,
-    title: "استرس ادراک شده",
+    title: "تست میزان استرس",
     url: "/images/carousel/1.jpg",
     link: "/test",
     alt: "تست استرس percieved stress",

@@ -1,9 +1,10 @@
 ---
-title: 'پست شماره سه'
+title: 'پست شماره چهار'
 date: ''
-excerpt: 'پست شماره سه برای تست'
-cover_image: '/images/posts/img3.jpg'
-category: 'سلامت روان'
+reading_time: 'زمان مطالعه 7 دقیقه'
+excerpt: 'پست شماره چهار برای تست'
+cover_image: '/images/posts/4.jpg'
+category: 'پیشرفت شغلی'
 author: 'استودیو'
 author_image: '/apple-touch-icon.png'
 ---

@@ -109,7 +109,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         width={1200}
                         height={480}
                       />
-                      <h4 className="w-full absolute top-0 left-0 text-center mt-32 text-white text-4xl md:text-6xl font-bold">
+                      <h4 className="w-full absolute top-0 left-0 text-center mt-32 text-4xl md:text-6xl font-bold">
                         {slide.title}
                       </h4>
                     </Link>

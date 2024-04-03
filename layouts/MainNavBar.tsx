@@ -12,7 +12,7 @@ export default function MainNavBar() {
           <Image
             src="/images/logo-with-text.svg"
             width={120}
-            height={40}
+            height={60}
             alt="Studio Mosbat logo"
           />
         </Link>

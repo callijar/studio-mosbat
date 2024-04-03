@@ -38,28 +38,25 @@ export default function PostPage(props: any) {
   const post = getPostContent(postId);
 
   return (
-    <main className="flex min-h-screen max-w-screen-lg flex-col items-center justify-evenly px-8 mx-auto py-8 md:py-10">
-      <div className="container max-w-screen-sm flex justify-between items-center mt-4">
-        <div className="my-3 text-gray-600">
-          {post.data.category}
-        </div>
-        <div className="my-3 text-gray-600">
-          زمان مطالعه 5 دقیقه
-        </div>
-      </div>
+    <main className="flex min-h-screen flex-col items-center justify-evenly px-8 mx-auto py-8 md:py-10">
       <h1 className="mb-5 py-10 text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-500 to-indigo-500 inline-block text-transparent bg-clip-text">
         {post.data.title}
       </h1>
 
       <Image
-        className="mb-5 lg:rounded-lg max-w-screen-lg"
+        className="mb-5 lg:rounded-lg max-w-screen-md"
         src={post.data.cover_image}
-        width={600}
-        height={400}
+        width={1200}
+        height={480}
         alt="cover image"
       />
 
-      <article className="prose max-w-prose md:prose-lg lg:prose-xl prose-img:rounded prose-a:decoration-indigo-500 ">
+      <div className="container max-w-screen-sm flex justify-between items-center my-4 font-semibold">
+        <div className="my-3 text-emerald-600">{post.data.category}</div>
+        <div className="my-3 text-indigo-600">{post.data.reading_time}</div>
+      </div>
+
+      <article className="prose max-w-prose md:prose-md lg:prose-lg prose-img:rounded prose-a:decoration-indigo-300 prose-a:decoration-none prose-a:decoration-2 prose-a:underline-offset-4">
         <Markdown>{post.content}</Markdown>
       </article>
     </main>
