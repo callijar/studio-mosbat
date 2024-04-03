@@ -1,3 +1,5 @@
+// for future website versions: stressTesData supports adding additional languages for i18n
+
 export const stressTestData = {
   locale: "fa",
   title: "تست استرس ادراک شده",

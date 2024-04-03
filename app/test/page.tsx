@@ -1,3 +1,5 @@
+// test page shows the StressSurvey and its results
+
 import type { Metadata } from 'next';
 import StressSurvey from '@/layouts/StressSurvey';
 

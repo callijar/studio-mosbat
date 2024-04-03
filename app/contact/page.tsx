@@ -1,8 +1,10 @@
-import type { Metadata } from 'next';
-import ContactForm from '@/layouts/ContactForm';
+// contact page displays the contact form
+
+import type { Metadata } from "next";
+import ContactForm from "@/layouts/ContactForm";
 
 export const metadata: Metadata = {
-	title: 'تماس با ما',
+  title: "تماس با ما",
 };
 
 export default function AboutPage() {
@@ -13,9 +15,6 @@ export default function AboutPage() {
       </h1>
 
       <ContactForm />
-    
-
-
     </main>
   );
 }

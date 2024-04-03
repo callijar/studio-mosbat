@@ -1,3 +1,5 @@
+// custom 404 page
+
 import Image from "next/image";
 
 export default function notfound() {

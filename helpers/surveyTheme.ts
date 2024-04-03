@@ -1,3 +1,5 @@
+// custom survey theme
+
 export const surveyTheme = {
   themeName: "default",
   isPanelless: false,

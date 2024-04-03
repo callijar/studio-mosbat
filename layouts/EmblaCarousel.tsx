@@ -1,3 +1,6 @@
+// embla parallax carousel is copied from its docs
+// individual slide data and format was modified
+
 "use client";
 
 import Image from "next/image";

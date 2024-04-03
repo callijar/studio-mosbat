@@ -1,3 +1,5 @@
+// HomePage contains a carousel, introduction, and info
+
 import Link from "next/link";
 import EmblaCarousel from "@/layouts/EmblaCarousel";
 import { EmblaOptionsType } from "embla-carousel";

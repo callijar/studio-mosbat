@@ -12,6 +12,7 @@
     "@emailjs/browser": "^4.3.3",
     "@vercel/analytics": "^1.2.2",
     "dotenv": "^16.4.5",
+    "emailjs": "^4.0.3",
     "embla-carousel": "^8.0.0",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",

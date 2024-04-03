@@ -1,3 +1,8 @@
+// individual post page
+
+// dynamic routing
+// [postId] is the post file name without extension (.md)
+
 import fs from "fs";
 import Image from "next/image";
 import Markdown from "markdown-to-jsx";
@@ -32,7 +37,7 @@ export const generateStaticParams = async () => {
   }));
 };
 
-// Markdown extension converts the .md post file to HTML
+// Markdown extension converts the .md post file to HTML and shows it to the user
 export default function PostPage(props: any) {
   const postId = props.params.postId;
   const post = getPostContent(postId);

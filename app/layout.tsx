@@ -9,7 +9,7 @@ const noto = Noto_Naskh_Arabic({ subsets: ["arabic", "latin"] });
 
 export const metadata: Metadata = {
 
-  title: {
+  title: {      // each page title replaces %s
     template: '%s | استودیو مثبت',
     default: 'استودیو مثبت',
   },

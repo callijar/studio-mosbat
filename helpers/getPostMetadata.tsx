@@ -1,11 +1,10 @@
-import fs from "fs";
-import matter from "gray-matter";
-import { PostMetadata } from "@/helpers/PostMetadata"; // Metadata category types
-
 // post metadata converted from front-matter on top of the md files using gray-matter
 // returns the categories as strings
 // the "id" category is the name of the .md file and is used for routing
 
+import fs from "fs";
+import matter from "gray-matter";
+import { PostMetadata } from "@/helpers/PostMetadata"; // Metadata category types
 
 export default function getPostMetadata(): PostMetadata[] {
   const folder = "posts/";                // posts directory
