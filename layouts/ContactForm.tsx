@@ -1,36 +1,34 @@
-'use client'
+"use client"; // react code, render client side
 
-import { FormEvent, useState } from 'react'
-import Confetti from 'react-confetti'
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Confetti from "react-confetti";
 
 export default function ContactForm() {
-  const [isSubmitted, setSubmitted] = useState(false)
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const form = useRef();
+  const [isSubmitted, setSubmitted] = useState(false);
 
-  const onSubmit = async (e: FormEvent) => {
-    e.preventDefault()
+  // send email when the submit button on the form is clicked
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    try {
-      const res = await fetch('../helpers/sendEmail', {
-        method: 'POST',
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-        headers: {
-          'content-type': 'application/json',
-        },
+    emailjs
+      .sendForm("service_4uyh4eo", "template_qlrp0pe", form.current, {
+        publicKey: "zHYi8vCno_av-II6o",
       })
-      if (res.status === 200) {
-        setSubmitted(true)
-      }
-    } catch (err: any) {
-      console.error('Err', err)
-    }
-  }
+      .then(
+        () => {
+          setSubmitted(true);
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
+  // shows form
+  // shows the submitted message after the form is submitted (isSubmitted is true)
 
   return isSubmitted ? (
     <div>
@@ -43,46 +41,20 @@ export default function ContactForm() {
       <Confetti />
     </div>
   ) : (
-    <form onSubmit={onSubmit} className="flex flex-col gap-8">
-      <div className="">
-        <label className="label font-semibold">
-          <span className="label-text">نام</span>
-        </label>
-        <input
-          className="input w-full input-bordered input-primary"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          type="text"
-          placeholder="نام شما"
-          required 
-        />
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-8 w-full max-w-sm text-center font-semibold text-md">
+      <div className="group py-2">
+        <label className="text-gray-700">نام</label>
+        <input type="text" name="name" placeholder="نام شما" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
       </div>
-      <div>
-        <label className="label font-semibold">
-          <span className="label-text">ایمیل</span>
-        </label>
-        <input
-          className="input w-full input-bordered input-primary"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          type="email"
-          placeholder="name@example.com"
-          required 
-        />
+      <div className="group py-2">
+        <label>ایمیل</label>
+        <input type="email" name="email"  placeholder="ایمیل شما" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
       </div>
-      <div>
-        <label className="label font-semibold">
-          <span className="label-text">پیغام</span>
-        </label>
-        <textarea
-          className="textarea w-full textarea-primary"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
+      <div className="group py-2">
+        <label>پیغام</label>
+        <textarea name="message"  placeholder="پیغام شما" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
       </div>
-      <button className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-xl" type="submit">
-        ارسال
-      </button>
+      <button type="submit" className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-xl" >ارسال</button>
     </form>
-  )
+  );
 }

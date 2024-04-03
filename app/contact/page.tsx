@@ -12,8 +12,6 @@ export default function AboutPage() {
         تماس با ما
       </h1>
 
-      <h2>فرم تماس و همکاری</h2>
-
       <ContactForm />
     
 
