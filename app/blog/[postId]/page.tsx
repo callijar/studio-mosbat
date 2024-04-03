@@ -61,7 +61,7 @@ export default function PostPage(props: any) {
         <div className="my-3 text-indigo-600">{post.data.reading_time}</div>
       </div>
 
-      <article className="prose max-w-prose md:prose-md lg:prose-lg prose-img:rounded prose-a:decoration-indigo-300 prose-a:decoration-none prose-a:decoration-2 prose-a:underline-offset-4">
+      <article className="prose prose:text-gray-500 max-w-prose md:prose-md lg:prose-lg prose-img:rounded prose-a:decoration-indigo-300 prose-a:decoration-none prose-a:decoration-2 prose-a:underline-offset-4">
         <Markdown>{post.content}</Markdown>
       </article>
     </main>

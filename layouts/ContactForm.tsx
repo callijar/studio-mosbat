@@ -58,7 +58,7 @@ export default function ContactForm() {
       className="flex flex-col gap-8 w-full max-w-sm text-center font-semibold text-md"
     >
       <div className="group py-2">
-        <label className="text-gray-700">نام</label>
+        <label>نام</label>
         <input
           type="text"
           name="name"

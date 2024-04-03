@@ -21,7 +21,7 @@ export default function HomePage() {
         استودیو مثبت
       </h1>
 
-      <div className="md:text-lg lg:text-xl w-full md:max-w-screen-sm group rounded-lg border px-5 py-4 m-10 transition-colors border-gray-300 bg-gray-100">
+      <div className="md:text-lg lg:text-xl w-full md:max-w-screen-sm group rounded-lg border px-5 py-4 m-10 transition-colors">
         <p>
           در دنیای پر مشغله امروز، توصیه هایی مثل مسافرت کردن و گشت و گذار در
           طبیعت یا حذف عوامل استرس زا برای خیلی از ما حرف هایی شیرین ولی غیر قابل
