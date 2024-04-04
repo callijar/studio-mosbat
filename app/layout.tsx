@@ -27,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa">
-      <body dir="rtl" className={noto.className}>
+    <html lang="fa" dir="rtl">
+      <body className={noto.className}>
         <MainNavBar />
         {children}
         <MainFooter />

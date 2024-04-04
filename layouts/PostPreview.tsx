@@ -8,7 +8,7 @@ export default function PostPreview(props: PostMetadata) {
   return (
     <Link
       href={`/blog/${props.postId}`}
-      className="group rounded-lg border border-transparent px-5 py-4 m-10 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+      className="group rounded-lg border border-transparent px-5 py-4 md:m-10 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
     >
       <Image
       className="mb-5 rounded-lg"
