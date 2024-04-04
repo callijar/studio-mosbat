@@ -1,9 +1,11 @@
+// post preview card
+// display a preview of posts on the blog page
+// posts will be automatically added from the root directory in the posts folder
+
 import Link from "next/link";
 import Image from "next/image";
 import { PostMetadata } from "@/helpers/PostMetadata";
 
-// post preview card style
-// shown on blog page
 export default function PostPreview(props: PostMetadata) {
   return (
     <Link

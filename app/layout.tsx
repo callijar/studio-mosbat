@@ -1,3 +1,7 @@
+// layout is applied to all of the pages
+// rtl and fa is defined for all pages
+// global css is applied to all pages
+
 import type { Metadata } from "next";
 import { Noto_Naskh_Arabic } from "next/font/google";
 import "./globals.css";

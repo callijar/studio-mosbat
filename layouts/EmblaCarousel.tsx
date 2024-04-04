@@ -1,7 +1,7 @@
-// embla parallax carousel is copied from its docs
-// individual slide data and format was modified
+// embla parallax carousel template is copied from the docs on its website
+// individual slide data and style was modified
 
-"use client";
+"use client"; // render client side
 
 import Image from "next/image";
 import Link from "next/link";

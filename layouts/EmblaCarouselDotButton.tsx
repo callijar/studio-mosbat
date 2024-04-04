@@ -1,4 +1,7 @@
-'use client';
+// embla dot button control template is copied from the docs on its website
+// the style was modified
+
+'use client';  // render client side
 
 import {
   PropsWithChildren,

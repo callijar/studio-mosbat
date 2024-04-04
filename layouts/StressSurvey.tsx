@@ -1,4 +1,9 @@
-"use client";
+// uses surveyjs to view and score the survey
+// questions and values are in stressTestData file
+// conditional results page values are at the top of stressTestData file
+// scoring scheme is defined in this file
+
+"use client";   // render client side
 
 import "survey-core/defaultV2.min.css";
 import { Model } from "survey-core";

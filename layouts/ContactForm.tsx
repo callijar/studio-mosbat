@@ -2,7 +2,7 @@
 // emails the form data to admin
 // after the form is successfully submitted, displays "پیغام شما دریافت شد" and throws confetti
 
-"use client"; // react code, render client side
+"use client"; // render client side
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";

@@ -1,4 +1,4 @@
-// for future website versions: stressTesData supports adding additional languages for i18n
+// for future website versions: stressTestData supports adding additional languages for i18n
 
 export const stressTestData = {
   locale: "fa",
