@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MainNavBar() {
   return (
-    <header className="w-screen shadow-lg bg-gradient-to-b from-white via-white">
+    <header className="w-screen shadow-lg bg-gradient-to-b from-white via-white dark:from-gray-500 dark:via-black dark:to-gray-500">
       <nav className="container max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between p-3">
         <Link href="/" className="flex-start mb-4 md:mb-0">
           <Image
