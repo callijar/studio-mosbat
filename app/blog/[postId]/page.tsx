@@ -38,6 +38,7 @@ export const generateStaticParams = async () => {
 };
 
 // Markdown extension converts the .md post file to HTML and shows it to the user
+// slugify option in Markdown uses the heading for id when non-alphanumeric characters like Farsi is used. if not included, the ids will be empty and will result in W3 validator error
 export default function PostPage(props: any) {
   const postId = props.params.postId;
   const post = getPostContent(postId);
@@ -63,7 +64,7 @@ export default function PostPage(props: any) {
 
       <div className="mx-2">
         <article className="prose max-w-prose md:prose-md lg:prose-lg prose-img:rounded prose-a:decoration-indigo-300 prose-a:decoration-none prose-a:decoration-2 prose-a:underline-offset-4">
-          <Markdown>{post.content}</Markdown>
+          <Markdown options={{ slugify: str => str }}>{post.content}</Markdown>     
         </article>
       </div>
     </main>
