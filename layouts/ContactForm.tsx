@@ -65,7 +65,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           placeholder="نام شما"
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
       <div className="group py-2">
@@ -76,7 +76,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           placeholder="ایمیل شما"
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
       <div className="group py-2">
@@ -86,7 +86,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           placeholder="پیغام شما"
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
       <button

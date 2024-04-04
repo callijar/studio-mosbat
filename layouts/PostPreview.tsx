@@ -22,7 +22,7 @@ export default function PostPreview(props: PostMetadata) {
 
       <div className="my-3 text-emerald-600 font-semibold">{props.category}</div>
 
-      <h2 className="inline-block mb-3 text-2xl font-semibold bg-gradient-to-l from-indigo-200 to-indigo-100 bg-[length:0px_10px] bg-right-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_15px]">
+      <h2 className="inline-block mb-3 text-2xl font-semibold bg-gradient-to-l from-indigo-400 to-transparent bg-[length:0px_10px] bg-right-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_15px]">
         {props.title}
       </h2>
 

@@ -4,7 +4,7 @@ date: ''
 reading_time: 'زمان مطالعه 5 دقیقه'
 excerpt: 'راهکارهای مقابله با استرس یا باید منابع ذهنی ما را افزایش دهند و یا به ما در مدیریت یا کاهش نیاز ها کمک کنند
 '
-cover_image: '/images/posts/1.jpg'
+cover_image: '/images/posts/2.jpg'
 category: 'سلامت روان'
 author: 'استودیو'
 author_image: '/apple-touch-icon.png'

@@ -1,24 +1,24 @@
 export const sliderData = [
   {
     id: 1,
-    title: "تست میزان استرس",
-    url: "/images/carousel/1.jpg",
-    link: "/test",
-    alt: "تست استرس percieved stress",
+    title: "دورکاری",
+    url: "/images/posts/1.jpg",
+    link: "/blog/01-remote-work",
+    alt: "دورکاری remote work",
 
   },
   {
     id: 2,
-    title: "محیط کار شاداب",
-    url: "/images/carousel/2.jpg",
-    link: "/test",
-    alt: "مقاله محیط کار شاداب",
+    title: "استرس درک شده",
+    url: "/images/posts/2.jpg",
+    link: "/blog/02-percieved-stress",
+    alt: " استرس percieved stress",
   },
   {
     id: 3,
-    title: "فرسودگی شغلی",
-    url: "/images/carousel/3.jpg",
-    link: "/test",
-    alt: "مقاله burnout فرسودگی شغلی",
+    title: "خواب و سلامت روان",
+    url: "/images/posts/3.jpg",
+    link: "/blog/03-sleep-and-mental-health",
+    alt: "خواب و سلامت روان sleep and mental health",
   },
 ];

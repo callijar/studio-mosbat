@@ -65,8 +65,10 @@ export default function PostPage(props: any) {
       </div>
 
       <div className="mx-2">
-        <article className="prose max-w-prose md:prose-md lg:prose-lg prose-img:rounded prose-a:decoration-indigo-300 prose-a:decoration-none prose-a:decoration-2 prose-a:underline-offset-4">
-          <Markdown options={{ slugify: str => str }}>{post.content}</Markdown>     
+        <article className="prose dark:prose-invert max-w-prose md:prose-md lg:prose-lg prose-img:rounded prose-h2:text-indigo-500 prose-h3:text-emerald-500 prose-a:decoration-indigo-300 prose-a:decoration-none prose-a:decoration-2 prose-a:underline-offset-4">
+          <Markdown options={{ slugify: (str) => str }}>
+            {post.content}
+          </Markdown>
         </article>
       </div>
     </main>

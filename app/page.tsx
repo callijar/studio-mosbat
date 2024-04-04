@@ -30,10 +30,10 @@ export default function HomePage() {
         <br />
         <p className="md:text-lg lg:text-xl max-w-screen-sm">
           در استودیو مثبت قصد داریم{" "}
-          <span className="bg-gradient-to-l from-indigo-200 to-indigo-100 bg-[length:0px_10px] bg-right-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_15px]">
+          <span className="bg-gradient-to-l from-indigo-400 to-transparent bg-[length:0px_10px] bg-right-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_15px]">
             راهکارهای عملی
           </span>{" "}
-          که با شرایط ما <span className="bg-gradient-to-l from-indigo-200 to-indigo-100 bg-[length:0px_10px] bg-right-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_15px]">
+          که با شرایط ما <span className="bg-gradient-to-l from-indigo-400 to-transparent bg-[length:0px_10px] bg-right-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_15px]">
             قابل اجرا
           </span>{" "} هستند را از منابع موثق گردآوری کنیم و در
           اختیار شما قرار بدهیم.{" "}
